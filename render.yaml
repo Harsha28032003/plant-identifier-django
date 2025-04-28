@@ -3,7 +3,7 @@ services:
     name: plant-identifier
     env: python
     buildCommand: "./build.sh"
-    startCommand: "cd django_plant_identifier && gunicorn plant_identifier.wsgi:application"
+    startCommand: "cd django_plant_identifier && gunicorn django_plant_identifier.wsgi:application"
     envVars:
       - key: DEBUG
         value: "False"
